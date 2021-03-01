@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Build Folders
+out/
+build/
+output/
+bin/
+
+# VSCode Files
+.vscode/
