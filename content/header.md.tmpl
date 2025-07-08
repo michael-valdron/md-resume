@@ -3,8 +3,12 @@
     {{ if .author }}<meta name="author" content="{{ .author }}" />{{ end }}
     {{ if .keywords }}<meta name="keywords" content="{{ .keywords }}" />{{ end }}
     {{ if .description }}<meta name="description" content="{{ .description }}" />{{ end }}
+    <style>
+    @page { @top-left { content: element(header) }; }
+    #header { display: block; position: running(header); }
+    </style>
 </head>
-
-**Header Title**
-
-_Header Subtitle_
+<span id="header">
+    <span id="title">Header Title</span><br/>
+    <span id="subtitle">Header Subtitle</span><br/><br/>
+</span>
