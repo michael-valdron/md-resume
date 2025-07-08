@@ -1,8 +1,8 @@
 <head>
-    <title>{{ .title }}</title>
-    {{ if .author }}<meta name="author" content="{{ .author }}" />{{ end }}
-    {{ if .keywords }}<meta name="keywords" content="{{ .keywords }}" />{{ end }}
-    {{ if .description }}<meta name="description" content="{{ .description }}" />{{ end }}
+    <title>{{ .metadata.title }}</title>
+    {{ if .metadata.author }}<meta name="author" content="{{ .metadata.author }}" />{{ end }}
+    {{ if .metadata.keywords }}<meta name="keywords" content="{{ .metadata.keywords }}" />{{ end }}
+    {{ if .metadata.description }}<meta name="description" content="{{ .metadata.description }}" />{{ end }}
     <style>
     @page { @top-left { content: element(header) }; }
     #header { display: block; position: running(header); }
