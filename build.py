@@ -31,7 +31,6 @@ def validate_args(args: Dict[str, Any]) -> int:
     elif args['footer'] and not os.path.exists(args['footer']):
         print(f"MD footer file '{args['footer']}' provided but does not exist, please provide a footer MD file that exists.")
         return 5
-    # TODO: Add more invalid cases
     
     return 0
 
@@ -108,7 +107,6 @@ def process_md(contents: List[str], outdir: str, cssfile: str = None, headerfile
         out_content.append(process_header(headerfile))
 
         if footerfile:
-            # TODO
             pass
         
         for content_file in contents:
