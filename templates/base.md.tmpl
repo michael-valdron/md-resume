@@ -1,3 +1,3 @@
-{{ tmplWithVars "templates/header.md.tmpl" (file "config.json" | fromJSON) }}
+{{ tmplWithVars "templates/header.md.tmpl" (file "config.yaml" | fromYAML) }}
 
 {{ file "content/content.md" }}
