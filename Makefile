@@ -19,7 +19,7 @@ STYLE := styles/style.css
 endif
 
 ifndef MD_BASE_TEMPLATE
-MD_BASE_TEMPLATE := templates/content.md.tmpl
+MD_BASE_TEMPLATE := templates/base.md.tmpl
 endif
 
 MDTMPL_BIN := $(PWD)/bin/mdtmpl
