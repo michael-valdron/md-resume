@@ -1,0 +1,4 @@
+[submodule "mdtmpl"]
+	path = mdtmpl
+	url = https://github.com/michael-valdron/mdtmpl
+	branch = no-comment-eval
